@@ -1,0 +1,52 @@
+# Svemirski Okršaj
+Napravite jednostavnu igru u kojoj igrač upravlja svemirskim brodom kroz 5 sektora svemira, boreći se protiv neprijateljskih brodova.
+## Početno stanje:
+1. Igrač ima svemirski brod sa:
+   - 100 energije štita
+   - 3 rakete
+2. Putovanje je podeljeno na 5 sektora.
+## Neprijateljski brod:
+- Svaki neprijateljski brod ima 50 HP (Health Points)
+## Tok igre:
+Za svaki od 5 sektora:
+1. Prikaži trenutno stanje:
+   Sektor: [trenutni sektor]/5
+   Energija štita: [preostala energija]
+   Rakete: [preostale rakete]
+
+Generišite nasumičan događaj:
+80% šansa za pojavu neprijateljskog broda
+20% šansa za miran prolazak
+Ako se pojavi neprijateljski brod, prikaži:
+
+Neprijateljski brod se pojavio!
+HP neprijatelja: [HP]
+
+Igrač bira jednu od 3 akcije:
+a) Laserski napad
+Nanosi 10-20 štete neprijatelju
+80% šansa za pogodak
+
+b) Ispaliti raketu
+Troši 1 raketu
+Nanosi 30-40 štete neprijatelju
+90% šansa za pogodak
+
+c) Pokušaj bekstva
+50% šansa za uspešno bekstvo
+
+Nakon akcije igrača:
+Prikaži rezultat akcije
+Ako je neprijatelj uništen, prikaži poruku o pobedi
+Ako neprijatelj nije uništen i igrač nije pobegao:
+Neprijatelj uzvraća udarac
+70% šansa da pogodi i nanese 10-15 štete igraču
+Na kraju sektora:
+Ako je energija štita igrača 0 ili manje, igra se završava ## Kraj igre:
+Ako igrač preživi svih 5 sektora, pobedio je
+Prikaži koliko je neprijatelja uništeno ## Saveti za implementaciju:
+Koristite random modul za generisanje nasumičnih brojeva
+Napravite funkcije za različite akcije (npr. laserski_napad(), ispaliti_raketu())
+Koristite petlju for za prolazak kroz sektore
+Čuvajte stanje igre u promenljivama (npr. energija_stita, rakete)
+uradi mi ovaj zadatak u pythonu tako da pocetnicima bude sto jasnije, dodaj mi opisne i detaljne komentare kako se i sta i gde koristi.
